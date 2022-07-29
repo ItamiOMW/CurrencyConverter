@@ -42,14 +42,14 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/ll_firstConversion"
+                android:id="@+id/ll_from"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/et_firstConversion"
+                    android:id="@+id/et_from"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="8"
@@ -65,19 +65,19 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_secondConversion"
+                android:id="@+id/ll_to"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/et_secondConversion"
+                    android:id="@+id/et_to"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="8"
                     android:hint="@string/to"
-                    android:inputType="number" />
+                    android:inputType="none" />
 
                 <Spinner
                     android:id="@+id/spinner_to"
