@@ -43,6 +43,8 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             val to = binding.spinnerTo.selectedItem.toString()
             if (checkIfAmountEntered()) {
                 viewModel.convert(from, to, amount)
+            } else {
+                binding.etFrom.setText("0")
             }
         }
         binding.spinnerFrom.onItemSelectedListener = this
