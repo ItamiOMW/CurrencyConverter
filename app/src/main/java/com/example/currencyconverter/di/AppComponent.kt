@@ -12,7 +12,7 @@ interface AppComponent {
     fun inject(mainActivity: MainActivity)
 
     @Component.Factory
-    interface factory {
+    interface Factory {
 
         fun create(
             @BindsInstance application: Application

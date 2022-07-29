@@ -8,7 +8,7 @@ import retrofit2.http.Query
 interface ApiService {
 
     @GET("convert")
-    fun convert(
+    suspend fun convert(
         @Query(QUERY_PARAM_API_KEY) apiKey: String = API_KEY,
         @Query(QUERY_PARAM_TO) to: String,
         @Query(QUERY_PARAM_FROM) from: String,
